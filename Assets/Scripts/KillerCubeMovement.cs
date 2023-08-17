@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class KillerCubeMovement : MonoBehaviour
 {
     public GameObject player;
     public float killerSpeed = 3.3f;
