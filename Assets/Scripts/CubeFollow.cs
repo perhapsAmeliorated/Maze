@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-<<<<<<<< HEAD:Assets/Scripts/KillerCubeMovement.cs
-public class KillerCubeMovement : MonoBehaviour
-========
 public class CubeFollow : MonoBehaviour
->>>>>>>> pr/2:Assets/CubeFollow.cs
+
 {
     public NavMeshAgent KillerCube;
     public Transform player;
