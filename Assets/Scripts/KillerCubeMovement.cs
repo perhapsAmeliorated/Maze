@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
+<<<<<<<< HEAD:Assets/Scripts/KillerCubeMovement.cs
 public class KillerCubeMovement : MonoBehaviour
+========
+public class CubeFollow : MonoBehaviour
+>>>>>>>> pr/2:Assets/CubeFollow.cs
 {
-    public GameObject player;
+    public NavMeshAgent KillerCube;
+    public Transform player;
+
     public float killerSpeed = 3.3f;
-    public Vector3 offset = new Vector3(4, 6, 0);
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +23,6 @@ public class KillerCubeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + offset;
+        KillerCube.SetDestination(player.position);
     }
 }
